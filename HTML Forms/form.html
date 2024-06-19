@@ -1,0 +1,83 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <title>Home</title>
+    <style>
+      .states{
+        margin-top: 10px;
+      }
+    </style>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <form action="https://domfu.com/cgi/echo.fcgi">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="pCode">Postal Code:</label>
+            <input type="text" id="pCode" name="zip" placeholder="XXXXX">
+        </fieldset>
+        <br>
+        <div>
+            <label for="rating">Rating:</label>
+            <input type="text" id="rating" name="rating" placeholder="1 - 10">
+        </div>
+        <br>
+        <div>
+            <label for="comment">Comment:</label>
+            <textarea rows="3" cols="60" id="comment" name="comment" required></textarea>
+        </div>
+        <br>
+        <div>
+            Subscribe to our Mailing List:
+            <input type="radio" id="yes" name="mail" value="60">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="mail" value="60">
+            <label for="no">No</label><br> 
+        </div>
+        <br>
+        <fieldset>
+            <legend>Mailing List Subscriptions:</legend>
+            <br>
+            <input type="checkbox" id="narnia" name="narnia">
+            <label for="narnia">Narnia Analytica</label>
+            <br>
+            <input type="checkbox" id="pizza" name="pizza">
+            <label for="pizza">Pizza Clapped</label>
+        </fieldset>
+        <div>
+            <label for="bday">Birthday:</label>
+            <input type="text" id="bday" name="birthday" placeholder="DD /MM /YYYY"> 
+        </div>
+        <div class="states">
+        <label for="state">State:</label>
+            <select name="US" id="state">
+                <option value="">select a state</option>
+                <optgroup label="USA">
+                    <option value="AK">AK</option>
+                    <option value="NE">NE</option>
+                </optgroup>
+                    <optgroup label="CANADA">
+                        <option value="NS">NS</option>
+                        <option value="ON">ON</option>
+                    </optgroup>
+                </select>         
+        </div>
+        <input type="hidden" name="NSA" value="ics22520240201/htmlforms">
+        <br>
+            <button type="reset">reset</button>
+            <button type="submit">submit</button>
+            <button>
+                <img src="settingsbutton.jpg" alt="settings" width="32px">
+                <br>
+                <p>Submit Button</p>
+                </button>
+            </button>
+       
+    </form>
+    <script type="text/javascript" src="https://domfu.com/app5/db/htmlforms/htmlformsgraderhelper.js"></script>
+</body>
+
+</html>
